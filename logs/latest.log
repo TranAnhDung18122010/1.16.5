@@ -1,0 +1,103 @@
+[17:10:48] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[17:10:48] [main/INFO]: Reloading ResourceManager: Default, bukkit
+[17:10:49] [Worker-Main-4/INFO]: Loaded 7 recipes
+[17:10:52] [Server thread/INFO]: Starting minecraft server version 1.16.5
+[17:10:52] [Server thread/WARN]: To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+[17:10:52] [Server thread/INFO]: Loading properties
+[17:10:52] [Server console handler/ERROR]: [TerminalConsole] Failed to read console input
+java.io.IOException: The handle is invalid
+	at java.io.FileInputStream.readBytes(Native Method) ~[?:1.8.0_431]
+	at java.io.FileInputStream.read(Unknown Source) ~[?:1.8.0_431]
+	at java.io.BufferedInputStream.read1(Unknown Source) ~[?:1.8.0_431]
+	at java.io.BufferedInputStream.read(Unknown Source) ~[?:1.8.0_431]
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source) ~[?:1.8.0_431]
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source) ~[?:1.8.0_431]
+	at sun.nio.cs.StreamDecoder.read(Unknown Source) ~[?:1.8.0_431]
+	at java.io.InputStreamReader.read(Unknown Source) ~[?:1.8.0_431]
+	at java.io.BufferedReader.fill(Unknown Source) ~[?:1.8.0_431]
+	at java.io.BufferedReader.readLine(Unknown Source) ~[?:1.8.0_431]
+	at java.io.BufferedReader.readLine(Unknown Source) ~[?:1.8.0_431]
+	at net.minecrell.terminalconsole.SimpleTerminalConsole.readCommands(SimpleTerminalConsole.java:180) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecrell.terminalconsole.SimpleTerminalConsole.start(SimpleTerminalConsole.java:143) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.DedicatedServer$1.run(DedicatedServer.java:106) ~[patched_1.16.5.jar:git-Purpur-1171]
+	Suppressed: java.io.IOException: The handle is invalid
+		at java.io.FileInputStream.close0(Native Method) ~[?:1.8.0_431]
+		at java.io.FileInputStream.access$000(Unknown Source) ~[?:1.8.0_431]
+		at java.io.FileInputStream$1.close(Unknown Source) ~[?:1.8.0_431]
+		at java.io.FileDescriptor.closeAll(Unknown Source) ~[?:1.8.0_431]
+		at java.io.FileInputStream.close(Unknown Source) ~[?:1.8.0_431]
+		at java.io.BufferedInputStream.close(Unknown Source) ~[?:1.8.0_431]
+		at sun.nio.cs.StreamDecoder.implClose(Unknown Source) ~[?:1.8.0_431]
+		at sun.nio.cs.StreamDecoder.close(Unknown Source) ~[?:1.8.0_431]
+		at java.io.InputStreamReader.close(Unknown Source) ~[?:1.8.0_431]
+		at java.io.BufferedReader.close(Unknown Source) ~[?:1.8.0_431]
+		at net.minecrell.terminalconsole.SimpleTerminalConsole.readCommands(SimpleTerminalConsole.java:183) ~[patched_1.16.5.jar:git-Purpur-1171]
+		at net.minecrell.terminalconsole.SimpleTerminalConsole.start(SimpleTerminalConsole.java:143) ~[patched_1.16.5.jar:git-Purpur-1171]
+		at net.minecraft.server.v1_16_R3.DedicatedServer$1.run(DedicatedServer.java:106) ~[patched_1.16.5.jar:git-Purpur-1171]
+[17:10:52] [Server thread/INFO]: This server is running Purpur version git-Purpur-1171 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
+[17:10:52] [Server thread/INFO]: Debug logging is disabled
+[17:10:52] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:10:52] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:10:52] [Server thread/INFO]: Default game type: SURVIVAL
+[17:10:52] [Server thread/INFO]: Generating keypair
+[17:10:52] [Server thread/INFO]: Starting Minecraft server on *:25565
+[17:10:52] [Server thread/INFO]: Using default channel type
+[17:10:52] [Server thread/INFO]: Tuinity: Using Java compression from Velocity.
+[17:10:52] [Server thread/INFO]: Tuinity: Using Java cipher from Velocity.
+[17:10:54] [Server thread/ERROR]: Could not load 'plugins\playit-minecraft-plugin.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: Unsupported API version 1.18
+	at org.bukkit.craftbukkit.v1_16_R3.util.CraftMagicNumbers.checkSupported(CraftMagicNumbers.java:361) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:149) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:414) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:322) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.loadPlugins(CraftServer.java:393) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.DedicatedServer.init(DedicatedServer.java:279) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1074) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:293) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_431]
+[17:10:54] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:10:54] [Server thread/INFO]: Preparing level "world"
+[17:10:54] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[17:10:54] [Server thread/INFO]: Preparing spawn area: 0%
+[17:10:55] [Server thread/INFO]: Preparing spawn area: 4%
+[17:10:55] [Server thread/INFO]: Time elapsed: 591 ms
+[17:10:55] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[17:10:55] [Server thread/INFO]: Preparing spawn area: 0%
+[17:10:55] [Server thread/INFO]: Preparing spawn area: 0%
+[17:10:56] [Server thread/INFO]: Time elapsed: 821 ms
+[17:10:56] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[17:10:56] [Server thread/INFO]: Preparing spawn area: 0%
+[17:10:56] [Server thread/INFO]: Time elapsed: 84 ms
+[17:10:56] [Server thread/INFO]: Running delayed init tasks
+[17:10:56] [Server thread/INFO]: Done (3.897s)! For help, type "help"
+[17:10:56] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] ************************************************************
+[17:10:56] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * WARNING - YOU ARE RUNNING AN OUTDATED VERSION OF JAVA.
+[17:10:56] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * PAPER WILL STOP BEING COMPATIBLE WITH THIS VERSION OF
+[17:10:56] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * JAVA WHEN MINECRAFT 1.17 IS RELEASED.
+[17:10:56] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] *
+[17:10:56] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * Please update the version of Java you use to run Paper
+[17:10:56] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * to at least Java 16. When Paper for Minecraft 1.17 is
+[17:10:56] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * released support for versions of Java before 16 will
+[17:10:56] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * be dropped.
+[17:10:56] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] *
+[17:10:56] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * Current Java version: 1.8.0_431
+[17:10:56] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] *
+[17:10:56] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * Check this forum post for more information: 
+[17:10:56] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] *   https://papermc.io/java16
+[17:10:56] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] ************************************************************
+[17:10:56] [Server thread/INFO]: Timings Reset
+[17:12:11] [Server thread/INFO]: Stopping server
+[17:12:11] [Server thread/INFO]: Saving players
+[17:12:12] [Server thread/INFO]: Saving worlds
+[17:12:12] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[17:12:12] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[17:12:12] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[17:12:13] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[17:12:13] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[17:12:13] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[17:12:13] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[17:12:13] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[17:12:13] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[17:12:13] [Server thread/INFO]: Flushing Chunk IO
+[17:12:13] [Server thread/INFO]: Closing Thread Pool
+[17:12:13] [Server thread/INFO]: Closing Server
